@@ -45,10 +45,29 @@ main{
 .article{
    justify-content: center;
    padding-left:25px; 
-
-    
 }
 
+input{
+    width: 500px;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+}
+form{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.submit{
+    width: 80px;
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
 
 #right{
     float:left; 
