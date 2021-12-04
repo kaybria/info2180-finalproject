@@ -2,23 +2,56 @@ window.onload = function()
 {
     var submit = document.querySelector('#issue_submit');
     var httpRequest; 
+    var assigned = document.querySelector('[id="assigned"]');
+    var priority = document.querySelector('[id="priority"]');
+    let desc; 
+    var type = document.querySelector('[id="type"]'); 
+        type.addEventListener("change", function (e){
+            var select = e.target;
+            var value = select.value;
+            desc = select.selectedOptions[0].text;
+            console.log('option des', desc);
+    
+        });
+    let pri;
+    priority.addEventListener("change", function (e){
+        // log(`e.target`, e.target);
+        var sel= e.target;
+        var val = sel.value;
+        pri = sel.selectedOptions[0].text;
+        
+        console.log('option pri', pri);
+
+    });
+
+    let nameText;
+    assigned.addEventListener("change", function (e){
+        // log(`e.target`, e.target);
+        var nam= e.target;
+        var val = nam.value;
+        nameText = nam.selectedOptions[0].text;
+        
+        console.log('option text', nameText);
+
+    });
     
 
     submit.addEventListener('click', function(element)
     {
         element.preventDefault();
         console.log("button clicked");
-        checkEmptyfields(); 
+        checkEmptyfields();  
         httpRequest = new XMLHttpRequest(); 
         var title = document.getElementById('title');
         var t = title.value;
         var description = document.getElementById('description');
         var d = description.value; 
+        console.log('pop', desc); 
         var url = "process.php";
         httpRequest.onreadystatechange = processName;
         httpRequest.open('POST', url);
         httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        httpRequest.send('title=' + encodeURIComponent(t) + "&description=" + encodeURIComponent(d));
+        httpRequest.send('title=' + encodeURIComponent(t) + '&description=' + encodeURIComponent(d) + '&type=' + encodeURIComponent(desc) + "&priority=" + encodeURIComponent(pri)+ "&assigned=" + encodeURIComponent(nameText));
     });
     
     function processName() {
@@ -32,7 +65,10 @@ window.onload = function()
           }
         }
     }
+   
     
+
+
     function checkEmptyfields()
     {
 
@@ -53,32 +89,11 @@ window.onload = function()
         {
             console.log(description.value);
             console.log(title.value);
+            console.log(type);
+            console.log(priority); 
             console.log("good too go ");
                 
          }
         
     }
-}
-
-
-// function cleanInput(){
-//     var cTitle = title.value; 
-//     var cDescription = description.value; 
-//     cTitle = cTitle.replace(/[^a-z0-9áéíóúñü \.,_-]/gim, "");
-//     cleaninput = cTitle.trim();
-//     cDescription = cDescription.replace(/[^a-z0-9áéíóúñü \.,_-]/gim, "");
-//     cleaninput2 = cDescription.trim();
-
-// }
-
-// window.addEventListener("DOMContentLoaded",function()
-// {
-//     submitbtn();
-//     checkEmptyfields();
-//     // cleanInput(); 
-    
-// })
-
-
-
-   
+}    

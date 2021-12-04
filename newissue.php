@@ -1,16 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-if (!isset($_POST['title']) || !isset($_POST['description']) ||
-empty($_POST['title']) || empty($_POST['description'])) {
-  echo "What?!?!? You don't have a name or ID Number?";
-} else {
-  echo "Your name is: <strong>" . $_POST['description'] . "</strong> and your ID Number is: <strong>" . $_POST['description'] . "</strong>.";
-}
-}
-
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,34 +8,11 @@ empty($_POST['title']) || empty($_POST['description'])) {
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="createissues.js"></script>
-        <script src="norefresh.js" charset="utf-8"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     </head>
     <body>
-        <header class="header">
-            <div>
-            <i id="bug" class="fa fa-bug" style="font-size:36px;"></i>
-            <h1 class="center">Bugme Issue Tracker</h1>
-            <p></p>
-    
-            </div>            
-        </header>
-        <div class = "section">
-        <div class="nav">
-            <div class="tabs">
-                <nav>
-                <ul class="mainNav">
-                
-                <a class="active" data-toggle="tab" href="homescreen.php"><i class="fa fa-home"></i>Home</a> 
-                <a data-toggle="tab" href="newuser.php"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add User</a>
-                <a data-toggle="tab" href="newissue.php"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Issue</a>
-                <a data-toggle="tab" href="#logout"><i class='fa fa-power-off'></i>Logout</a>
-            </ul>
-                </nav>
-                
-            </div>
-        </div>  
+        
         <div id="new">
-
             <h3>Create Issue</h3>
             <form method="post" name="form" id="form" action="">
                 <label for="title">Title</label>
@@ -58,26 +22,27 @@ empty($_POST['title']) || empty($_POST['description'])) {
                 <textarea id="description" name="array[]" placeholder=" " style="height:200px"></textarea>
                         
                 <label for="assigned">Assigned To</label>
-                <select id="issue" name="assigned">
-
-                    <option value="name">Marcia Brady</option>
+                <select id="assigned" name="assigned">
+                    <option value="name1">Admin</option>
+                    <option value="name2">S</option>
+                    
                 </select><br><br>
             
                 <label for="type">Type</label>
-                <select id="issue" name="type">
-                   <option value="type">Bug</option>
-                   <option> Proposal </option>
-                   <option> Task </option>
+                <select id="type" name="type">
+                   <option value="bug">Bug</option>
+                   <option value="proposal"> Proposal </option>
+                   <option value="task"> Task </option>
                 </select><br><br>
             
                 <label for="priority">Priority</label>
-                <select id="issue" name="priority">
-                    <option value="priority">Minor</option>
-                    <option value="priority">Major</option>
-                    <option value="priority">Critical</option>
+                <select id="priority" name="priority">
+                    <option value="minor">Minor</option>
+                    <option value="major">Major</option>
+                    <option value="critical">Critical</option>
                 </select><br>
                         
-                <input type="submit" id="issue_submit" value="Submit">
+                <button type="submit" id="issue_submit" value="Submit">Submit</button>
                     
             </form>
         </div>
@@ -86,6 +51,5 @@ empty($_POST['title']) || empty($_POST['description'])) {
             <div id="result"></div>
         </div>  
         
-
     </body>
 </html>

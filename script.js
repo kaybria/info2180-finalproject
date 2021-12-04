@@ -2,13 +2,13 @@ window.onload = function(){
     let fname = document.getElementById("fname")
     let lname = document.getElementById("lname")
     let email = document.getElementById("email")
-    let submit = document.getElementById("submit")
+    let submitform = document.getElementById("submit")
     let password =document.getElementById("password")
     let results =document.getElementById("results")
     var pwvalidate = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
     //let formelements = document.getElementById("new-user").elements
     //const postRequest= new XMLHttpRequest();
-    submit.addEventListener('click', function(e){
+    submitform.addEventListener('click', function(e){
         e.preventDefault();
 
         
