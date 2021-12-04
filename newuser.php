@@ -25,7 +25,7 @@
                 <nav>
                 <ul class="mainNav">
                 
-                <a class="active" data-toggle="tab" href="homescreen.php"><i class="fa fa-home"></i>Home</a> 
+                <a class="active" data-toggle="tab" href="index.php"><i class="fa fa-home"></i>Home</a> 
                 <a data-toggle="tab" href="#add"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add User</a>
                 <a data-toggle="tab" href="newissue.php"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Issue</a>
                 <a data-toggle="tab" href="#logout"><i class='fa fa-power-off'></i>Logout</a>

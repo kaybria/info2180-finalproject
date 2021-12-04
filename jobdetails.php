@@ -8,24 +8,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src=""></script>
-        <script src="norefresh.js" charset="utf-8"></script>
     </head>
-    <div class = "section">
-        <div class="nav">
-            <div class="tabs">
-                <ul class="mainNav">
-                
-                    <a class="active" data-toggle="tab" href = "homescreen.php"><i class="fa fa-home" ></i>Home</a> 
-                    <a data-toggle="tab" href="newuser.php"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add User</a>
-                    <a data-toggle="tab" href="#new"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Issue</a>
-                    <a data-toggle="tab" href="#logout"><i class='fa fa-power-off'></i>Logout</a>
-                </ul>
-            </div>
-        </div>  
     <body>
-     
-    <div class="tab-content">
-    <header class="header">
+        <header class="header">
             <div>
             <i id="bug" class="fa fa-bug" style="font-size:36px;"></i>
             <h1 class="center">Bugme Issue Tracker</h1>
@@ -35,6 +20,7 @@
         
         </header>
         <div class="main">
+
             <div class="display">
                 <h1>XSS VULERABILITY IN ADD USER FORM</h1>
                 <h3>Issue #100</h3>  
@@ -42,6 +28,7 @@
             <div class="issue">
             <div class="article">
                 <article class="mainArticle">
+
                     The occurrence of groundwater within the Earth’s crust and the emergence of springs at the ground 
                     surface are determined by the lithology of geological materials, regional geological structure, 
                     geomorphology of landforms and the availability of recharge sources. The infiltration of rainfall to the 
@@ -80,20 +67,10 @@
                         
             </div>
         </div>
-    </div>
-       
                     
         
 </body>
 </html>
-                    
-        
-                           
-                        
-       
-        
-                    
-
                     
         
 

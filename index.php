@@ -1,3 +1,5 @@
+<?php session_start();
+require_once "./phpfunctions.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,6 +154,7 @@
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder=" ">
                     <input type="submit"  id = "submit"class = "submit" value="Submit">
+                    <div id="results"></div>
                   </form>
                 
                 </div>
