@@ -49,9 +49,9 @@
                     <input type="text" id="email" name="email" placeholder=" ">
                     <input type="submit"  id = "submit"class = "submit" value="Submit">
                   </form>
+                  <div id="results"></div>
                 
                 </div>
         
         
     <body>
-

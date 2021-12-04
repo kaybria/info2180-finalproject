@@ -35,7 +35,6 @@
         
         </header>
         <div class="main">
-
             <div class="display">
                 <h1>XSS VULERABILITY IN ADD USER FORM</h1>
                 <h3>Issue #100</h3>  
@@ -43,7 +42,6 @@
             <div class="issue">
             <div class="article">
                 <article class="mainArticle">
-
                     The occurrence of groundwater within the Earth’s crust and the emergence of springs at the ground 
                     surface are determined by the lithology of geological materials, regional geological structure, 
                     geomorphology of landforms and the availability of recharge sources. The infiltration of rainfall to the 
@@ -88,6 +86,14 @@
         
 </body>
 </html>
+                    
+        
+                           
+                        
+       
+        
+                    
+
                     
         
 

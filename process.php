@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 
 $host = 'localhost';
 $username = 'admin@project2.com';
