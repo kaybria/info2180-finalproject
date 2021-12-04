@@ -27,6 +27,9 @@
                     <input type="submit"  id = "submit"class = "submit" value="Submit">
                   </form>
                   <div id="results"></div>
-                </div>
                 
-    <body>
+                </div>
+        
+        
+      </body>
+</html>

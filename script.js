@@ -2,7 +2,7 @@ window.onload = function(){
     let fname = document.getElementById("fname")
     let lname = document.getElementById("lname")
     let email = document.getElementById("email")
-    let submitform = document.getElementById("submit")
+    let submitform = document.getElementById("submitform")
     let password =document.getElementById("password")
     let results =document.getElementById("results")
     var pwvalidate = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
