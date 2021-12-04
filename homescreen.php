@@ -9,18 +9,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src=""></script>
     </head>
-    <body>
-        <header class="header">
-            <div>
-            <i id="bug" class="fa fa-bug" style="font-size:36px;"></i>
-            <h1 class="center">Bugme Issue Tracker</h1>
-            <p></p>
-    
-            </div>
-        
+    <body>        
         </header>
         <div class="tab-content">
-                <div id="home">
+               <div id="home" class="tab-pane fade in active">
                     <form action="">
                         <div class="issues">
                           <h1 class="h1">Issues</h1>
@@ -32,6 +24,52 @@
                           <a class="open" href="" id="open">Open</a>
                           <a class="tickets" href="" id="my-tickets">My Tickets</a>
                         </div>
+                        <table class="table">
+                          <tr>
+                              <th>Title</th>
+                              <th>Type</th>
+                              <th>Status</th>
+                              <th>Assigned To</td>
+                              <th>Created</th>
+                          </tr>
+                          <tr>
+                              <td class="title"><em>#100</em>  <a href="url"> Vulnerability in Add User Form</a></td>
+                              <td class="type">Bug</td>
+                              <td><input type="button" id="status1" value="Open"></td>
+                              <td class="asto">Tom Brady</td>
+                              <td class="date">2019-11-01</td>
+                          </tr>
+                          <tr>
+                              <td class="title"><em>#23</em> <a href="url">Location Service isn't working</a></td>
+                              <td class="type">Bug</td>
+                              <td><input type="button" id="status1" value="Open"></td>
+                              <td class="asto">Jan Brady</td>
+                              <td class="date">2019-10-15</td>
+                          </tr>
+                          <tr>
+                              <td class="title"><em>#16</em> <a href="url"> Setup Logger</a></td>
+                              <td class="type">Proposal </td>
+                              <td><input type="button" id="status2" value="Closed"></td>
+                              <td class="asto">Marsha Brady</td>
+                              <td class="date">2019-08-10</td>
+                          </tr>
+                          <tr>
+                              <td class="title"><em>#50</em> <a href="url">Create API Documentation</a></td>
+                              <td class="type">Proposal</td>
+                              <td class="status"><input type="button" id="status3" value="In Progress"></td>
+                              <td class="asto">Mike Brady</td>
+                              <td class="date">2019-10-29</td>
+                          </tr>
+                          <tr>
+                              <td class="title"><em>#24</em> <a href="url">Allow results to be sorted</a></td>
+                              <td class="type">Proposal</td>
+                              <td><input type="button" id="status3" value="In Progress"></td>
+                              <td class="asto">Marcia Brady</td>
+                              <td class="date">2019-10-20</td>
+                          </tr>
+                        </table>
+                    </form>
+                </div> 
                         <table class="table">
                            <thead>
                                 <tr>

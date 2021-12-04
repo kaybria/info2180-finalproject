@@ -10,29 +10,7 @@
         <script src="norefresh.js" charset="utf-8"></script>
     </head>
     <body>
-    <header class="header">
-        <div>
-           <i id="bug" class="fa fa-bug" style="font-size:36px;"></i>
-           <h1 class="center">Bugme Issue Tracker</h1>
-           <p></p>
-   
-        </div>
-       
-    </header>
-    <div class = "section">
-        <div class="nav">
-            <div class="tabs">
-                <nav>
-                <ul class="mainNav">
-                
-                <a class="active" data-toggle="tab" href="index.php"><i class="fa fa-home"></i>Home</a> 
-                <a data-toggle="tab" href="#add"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add User</a>
-                <a data-toggle="tab" href="newissue.php"><i class="fa fa-plus-circle" aria-hidden="true"></i>New Issue</a>
-                <a data-toggle="tab" href="#logout"><i class='fa fa-power-off'></i>Logout</a>
-            </ul>
-                </nav>
-                
-            </div>
+         
         </div>  
         
              <div id="add" >
