@@ -37,11 +37,11 @@ window.onload = function(){
         }
 
         //ensuring password meets requirements
-       /* if(!pwvalidate.test(password.value)){
+        if(!pwvalidate.test(password.value)){
             password.style.borderColor="red";
             alert("Passowrd must have one");
             return false;
-        }*/
+        }
         
         
        var insertrequest = new XMLHttpRequest();
