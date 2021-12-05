@@ -8,6 +8,6 @@ if(isset($_SESSION['id'])) {
         session_start();
     }
 
-redirect("./loginpage.php");
+redirect("./login.php");
 
  ?>
