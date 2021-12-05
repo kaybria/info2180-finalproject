@@ -12,8 +12,6 @@
     <body>
          
         </div>  
-        
-             <div id="add" >
                   <h3>New User</h3>
                   <form method = "post"  action = "newuser.php" id = "new-user">
                     <label for="fname">Firstname</label>
@@ -28,7 +26,7 @@
                   </form>
                   <div id="results"></div>
                 
-                </div>
+                
         
         
       </body>
